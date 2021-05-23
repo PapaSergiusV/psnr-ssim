@@ -1,0 +1,12 @@
+cpp/CMakeFiles
+cpp/cmake_install.cmake
+cpp/CMakeCache.txt
+cpp/Makefile
+cpp/main*
+
+dist
+node_modules
+
+*.csv
+runCompare*.sh
+
