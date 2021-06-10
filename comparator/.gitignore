@@ -1,0 +1,9 @@
+cpp/*
+!cpp/CMakeLists.txt
+!cpp/main.cpp
+!cpp/metrics.cpp
+!cpp/metrics.h
+
+node_modules
+dist
+.env

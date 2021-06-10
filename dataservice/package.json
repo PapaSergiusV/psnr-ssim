@@ -1,0 +1,22 @@
+{
+  "name": "dataservice",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "devDependencies": {
+    "ts-node": "3.3.0",
+    "@types/node": "^8.0.29",
+    "typescript": "3.3.3333"
+  },
+  "dependencies": {
+    "@types/amqplib": "^0.8.0",
+    "amqplib": "^0.8.0",
+    "pg": "^8.6.0",
+    "reflect-metadata": "^0.1.10",
+    "typeorm": "0.2.34"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "add-migration": "ts-node ./node_modules/typeorm/cli.js migration:generate -n",
+    "update-database": "ts-node ./node_modules/typeorm/cli.js migration:run"
+  }
+}
