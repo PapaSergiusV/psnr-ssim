@@ -11,6 +11,7 @@
 - ffmpeg v4.2.4 и выше
 - opencv v4, установленный в режиме совместимости с ffmpeg
 - node v14.4.0 и выше
+- pm2
 - cmake
 - make
 - СУБД Postgresql v13
