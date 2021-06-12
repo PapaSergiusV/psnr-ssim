@@ -30,7 +30,7 @@ const handleComparatorMessage = async (msg: amqp.ConsumeMessage) => {
     console.log('Video data', video.path, 'successfully saved');
     await channel.ack(msg);
   } catch (err) {
-    console.error('Video data processing error:', err);
+    console.error('Video data saving error:', err);
   }
 };
 

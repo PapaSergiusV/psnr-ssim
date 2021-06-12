@@ -31,11 +31,14 @@
 Адрес: 
 
 JSON: 
+```
 {
   "original": "/home/yugo/Документы/universite/Diploma/videos/web1/2/1080/original.mkv",
   "copy": "/home/yugo/Документы/universite/Diploma/videos/web1/2/1080/vp8realtime.webm",
-  "codec": "vp8"
+  "codec": "vp8",
+  "resolution": 1080
 }
+```
 
 где
 

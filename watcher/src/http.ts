@@ -17,9 +17,10 @@ const defineCodec = (path: string): string => {
 
 export const report = (original: string, copy: string) => {
   const codec = defineCodec(copy);
+  const resolution = original.match(/1080/) ? 1080 : 720;
   if (!codec) return;
 
-  axios.post(url, { original, copy, codec })
-    .then((v) => console.log(v))
+  axios.post(url, { original, copy, codec, resolution })
+    .then((v) => console.log(`${v.status === 200 ? 'OK' : v.status}\t${copy}`))
     .catch((err) => console.log(err));
 };

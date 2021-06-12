@@ -34,6 +34,7 @@ const handleMessage = async (msg: amqp.ConsumeMessage) => {
       ...metrics,
       path: data.copy,
       codec: data.codec,
+      resolution: data.resolution,
       ip,
     };
     sendToChannel(queues.toDB, result);

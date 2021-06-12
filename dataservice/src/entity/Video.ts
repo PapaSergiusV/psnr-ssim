@@ -12,8 +12,11 @@ export class Video extends BaseEntity {
   @Column()
   path: string;
 
-  @Column({ nullable: true })
+  @Column()
   codec: string;
+
+  @Column()
+  resolution: number;
 
   @Column({ type: 'float' })
   kbps: number;
