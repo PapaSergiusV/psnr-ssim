@@ -1,0 +1,27 @@
+version: '3.5'
+
+services: 
+  broker:
+    image: rabbitmq
+    ports:
+      - "5672:5672"
+  gateway:
+    build:
+      context: ./gateaway
+    depends_on: 
+      - broker
+  dataservice:
+    build: 
+      context: ./dataservice
+    depends_on: 
+      - gateway
+  comparator:
+    build: 
+      context: ./comparator
+    depends_on: 
+      - gateway
+  web:
+    build: 
+      context: ./web
+    depends_on: 
+      - gateway
